@@ -1,1 +1,63 @@
-:root { }
+/* =========================================
+   ESTILOS BASE (TU PARTE COMO DISEÑADOR/A)
+   ========================================= */
+
+:root {
+    --color-primario: #0070f3;
+    /* Tu variable */
+    --color-texto: #222222;
+    --color-bg-pagina: #f4f4f6;
+    --color-bg-tarjeta: #ffffff;
+    --color-borde: #e5e7eb;
+}
+
+
+/* Reset y tipografía */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background-color: var(--color-bg-pagina);
+    color: var(--color-texto);
+}
+
+
+/* Layout general (Nav y Contenedor) */
+
+.nav {
+    background-color: var(--color-bg-tarjeta);
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.nav a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+
+/* Responsive básico para móviles */
+
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor {
+        margin: 1.5rem auto;
+    }
+}
