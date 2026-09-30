@@ -1,1 +1,60 @@
-:root { }
+/* =========================================
+   1. BUSCA ESTE BLOQUE AL INICIO DE styles.css
+   Y AGREGA TU VARIABLE (No borres las de los demás)
+   ========================================= */
+:root {
+    --color-acento-dev2: #da0b0b; /* <-- Esta es tu propia variable de acento */
+}
+
+/* =========================================
+   2. PEGA ESTO HASTA EL FINAL DE styles.css
+   ========================================= */
+/* --- ESTILOS DE DEV2 (detalle.html) --- */
+.login-container {
+    width: 100%;
+    max-width: 380px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container h1 {
+    font-size: 32px;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.login-container input:focus {
+    border-color: var(--color-acento-dev2); /* Usando tu variable */
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-acento-dev2); /* Usando tu variable */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.login-container button:hover {
+    opacity: 0.9;
+}
